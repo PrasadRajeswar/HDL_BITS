@@ -1,7 +1,7 @@
-# HDL_BITS 
-#vector----vector concatanation operator 
-#Vector3 
-assign {w,x,y,z}={a,b,c,d,e,f,2'b11};  
+# HDL_BITS       
+#vector----vector concatanation operator      
+#Vector3          
+assign {w,x,y,z}={a,b,c,d,e,f,2'b11};            
 assign out[24:20] = ~{5{a}} ^ {a,b,c,d,e}; 
     assign out[19:15] = ~{5{b}} ^ {a,b,c,d,e}; 
     assign out[14:10] = ~{5{c}} ^ {a,b,c,d,e}; 
