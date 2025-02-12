@@ -8,9 +8,10 @@ assign out[24:20] = ~{5{a}} ^ {a,b,c,d,e};
     assign out[9:5] = ~{5{d}} ^ {a,b,c,d,e};                        
     assign out[4:0] = ~{5{e}} ^ {a,b,c,d,e};                            
 
-#modules:hierarchy
-#module shift8
-module top_module ( 
+#modules:hierarchy               
+#module shift8     
+    '''
+    module top_module ( 
     input clk, 
     input [7:0] d, 
     input [1:0] sel, 
@@ -33,4 +34,5 @@ module top_module (
             3:q<=w3;
         endcase
         end
-endmodule
+endmodule           
+    '''
